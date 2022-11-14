@@ -53,9 +53,6 @@ function encode {
   $reflectorC = @{"A"="F";"F"="A";"B"="V";"V"="B";"C"="P";"P"="C";"D"="J";"J"="D";"E"="I";"I"="E";"G"="O";"O"="G";"H"="Y";"Y"="H";"K"="R";"R"="K";"L"="Z";"Z"="L";"M"="X";"X"="M";"N"="W";"W"="N";"Q"="T";"T"="Q";"S"="U";"U"="S"}
   
   $alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  $rotorANotch = ""
-  $rotorBNotch = ""
-  $rotorCNotch = ""
   
   if ($reflector -eq "UKW-B") {
     $reflectorDict = $reflectorB
@@ -67,7 +64,6 @@ function encode {
   $rotorA = $rotorDict[$rotors[0]]
   $rotorB = $rotorDict[$rotors[1]]
   $rotorC = $rotorDict[$rotors[2]]
-  $rotorANotch = $rotorNotchDict[$rotors[0]]
   $rotorBNotch = $rotorNotchDict[$rotors[1]]
   $rotorCNotch = $rotorNotchDict[$rotors[2]]
   
