@@ -127,12 +127,6 @@ function encode {
           $rotorTrigger = $True 
         }
         $rotorBLetter = $alphabet[($alphabet.IndexOf($rotorBLetter) + 1) % 26]
-  
-        #Check if rotorA needs to rotate
-        if ($rotorTrigger) {
-          $rotorTrigger = $False
-          $rotorALetter = $alphabet[($alphabet.IndexOf($rotorALetter) + 1) % 26]
-        }		 
       } else {
         #Check for double step sequence!
         if ($rotorBLetter -eq $rotorBNotch) {
